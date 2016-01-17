@@ -18,7 +18,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 body
 {	margin-top: 100px;
-	background: #121212 url('../images/bg.png');
+	background: #121212;
+	background: url('../images/bg.png');
 }
 
 #container
