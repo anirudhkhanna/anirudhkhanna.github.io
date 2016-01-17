@@ -1,0 +1,106 @@
+/*
+Title: Styles
+Author: Anirudh Khanna
+*/
+
+/* ---------------------------------------------------------------------------------------
+   Reset
+   --------------------------------------------------------------------------------------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video 
+{	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+/*------------------------------------------------------------------------------------------*/
+
+body
+{	margin-top: 100px;
+	background: #121212 url('../images/bg.png');
+}
+
+#container
+{	margin: auto;
+	max-width: 550px;
+	background: rgba(255,255,255,0.97);
+	border-radius:55px;
+}
+
+.hello
+{	height: 50px;
+	background: rgba(255,50,50, 1);
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	color: rgba(255,255,255,0.97);
+	font: normal 45px Arial;
+}
+
+.introduction
+{	padding-left: 15px;
+	padding-right: 20px;
+	margin-top: 10px;
+}
+
+.introduction img
+{	max-width: 15.5%;
+	max-height: 15.5%;
+	float: right;
+	border-radius: 100px;
+}
+
+.introduction h1
+{	font-family: Helvetica, Arial, sans-serif;
+	font-size: 40px;
+}
+
+.introduction h2
+{	font-family: courier, monospace;
+	margin-left: 25px;
+}
+
+.small_im
+{	font-family: Georgia;
+	font-size: 10px;
+	margin-right: 5px;
+}
+
+.content
+{	padding: 15px 20px 10px 25px;
+	line-height: 20px;
+	font-size: 16px;
+	line-height: 1.45em;
+}
+
+.footer
+{	height: 50px;
+	background: rgba(255,50, 50, 1);
+	border-bottom-left-radius:25px;
+	border-bottom-right-radius:25px;
+}
+
+.footer p {
+	text-align: center;
+	font-family: Helvetica, Arial, sans-serif;
+	color: #fff;
+}
+
+.footer p a, footer p a:visited {
+	display: inline-block;
+	background: rgba(255, 100, 100, .55);
+	color: #fff;
+	border-radius: 5px;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.footer p a:hover {
+	background: rgba(255, 255, 255, .9);
+	color: #555;
+}
+
+a, a:visited {
+	color: #445878;
+	text-decoration: none;
+}
