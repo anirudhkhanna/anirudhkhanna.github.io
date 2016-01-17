@@ -1,2 +1,2 @@
 # anirudhkhanna.github.io
-My Website on GitHub!
+My website on GitHub!
