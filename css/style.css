@@ -52,10 +52,6 @@ a, a:visited {
 	margin-top: 10px;
 }
 
-.introduction a {
-	color: inherit;
-}
-
 .introduction img {
 	max-width: 14%;
 	max-height: 14%;
@@ -75,7 +71,11 @@ a, a:visited {
 	font-size: 25px;
 }
 
-.small_im {
+.introduction a {
+	color: inherit;
+}
+
+.small-im {
 	font-family: Georgia, serif;
 	font-size: 12px;
 	margin-right: 7px;
@@ -140,7 +140,7 @@ a, a:visited {
 }
 
 .clearfix:after {
-	content: " ";	/* Older browser do not support empty content */
+	content: " ";	/* Older browsers do not support empty content */
 	visibility: hidden;
 	display: block;
 	height: 0;
@@ -174,10 +174,10 @@ a, a:visited {
 
 .projectbox {
 	position: relative;
-	min-height: 465px;
+	min-height: 490px;
 	width: 25%;
 	margin: 20px;
-	padding: 20px;
+	padding: 10px 20px 20px;
 	float: left;
 	font-family: Georgia, serif;
 	color: #ccc;
@@ -247,14 +247,14 @@ footer a:hover {
    --------------------------------------------------------------------------------------- */
 @media (max-width: 1260px) {
 	.projectbox {
-		min-height: 480px;
-	}	
+		min-height: 500px;
+	}
 }
 
 @media (max-width: 1150px) {
 	.projectbox {
 		width: 40%;
-		min-height: 475px;
+		min-height: 485px;
 	}
 }
 
@@ -306,6 +306,11 @@ footer a:hover {
 		margin-left: 0px;
 	}
 
+	.small-im {
+		display: block;
+		margin: 20px auto 0;
+	}
+
 	.content {
 		text-align: center;
 		font-size: 20px;
@@ -334,6 +339,10 @@ footer a:hover {
 }
 
 @media (max-width: 480px) {
+	.content {
+		font-size: 19px;
+	}
+
 	#moreinfo a {
 		margin: 0px;
 		display: block;
@@ -354,7 +363,126 @@ footer a:hover {
 		padding: 30px 0px;
 	}
 
-	.projectbox {
-		margin: 5px;
+	#projects h1, #contributions h1 {
+		font-size: 40px;
 	}
+
+	.projectbox {
+		margin: 10px 5px;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------
+   Language bullets styling
+   --------------------------------------------------------------------------------------- */
+.langbox {
+	display: block;
+	margin-bottom: 9px;
+	min-height: 10px;
+	width: 100%;
+}
+
+.lang {
+	display: inline-block;
+	position: relative;
+	float: right;
+	margin-left: 4px;
+	height: 10px;
+	width: 10px;
+	border-radius: 100px;
+}
+
+/* Tooltip box */
+.lang span {
+	visibility: hidden;
+/*	display: none;	*/
+	opacity: 0;
+	padding: 2px 2px 1px 2px;
+/*	background: #dedede;	*/
+	background: inherit;
+/*	color: #000;	*/
+	color: inherit;
+	text-align: center;
+	font-size: 12px;
+	line-height: 22px;
+	border-radius: 10px;
+	position: absolute;	/* Position the tooltip text to top center */
+	min-height: 20px;
+	min-width: 140px;
+	bottom: 220%;
+	left: 50%;
+	margin-left: -72px;	/* Use about half of the width (140/2), to center the tooltip */
+}
+
+/* Arrow below the tooltip box */
+.lang span::after {
+	content: " ";
+	position: absolute;
+	top: 99%;	/* At the bottom of the tooltip */
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+/*	border-top-color: #dedede;	*/
+	border-top-color: inherit;
+}
+
+/* Color of the tooltip text */
+.lang span::first-line {
+	color: #000;
+}
+
+/* Show the tooltip when mouse is hovered over the lang bullet */
+.lang:hover span {
+	visibility: visible;
+	display: block;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+/* Languages */
+.c {
+	background: #da7880;
+	color: #da7880;
+}
+
+.html {
+	background: #ffa500;
+	color: #ffa500;
+}
+
+.css {
+	background: #51b4d6;
+	color: #51b4d6;
+}
+
+.js {
+	background: #fff030;
+	color: #fff030;
+}
+
+.jquery {
+	background: #ffff00;
+	color: #ffff00;
+}
+
+.php {
+	background: #7880da;
+	color: #7880da;
+}
+
+.bootstrap {
+	background: #8c6cc3;
+	color: #8c6cc3;
+}
+
+.aiml {
+	background: #9eda46;
+	color: #9eda46;
+}
+
+.arduino {
+	background: #1e9cb5;
+	color: #1e9cb5;
 }
