@@ -422,7 +422,7 @@ footer a:hover {
 .lang span::after {
 	content: " ";
 	position: absolute;
-	top: 99%;	/* At the bottom of the tooltip */
+	top: 99%;	/* Position at the bottom of the tooltip */
 	left: 50%;
 	margin-left: -5px;
 	border-width: 5px;
@@ -430,6 +430,12 @@ footer a:hover {
 	border-color: transparent;
 /*	border-top-color: #dedede;	*/
 	border-top-color: inherit;
+}
+
+@media (max-width: 630px) {
+	.lang span::after {
+		top: 97%;
+	}
 }
 
 /* Color of the tooltip text */
