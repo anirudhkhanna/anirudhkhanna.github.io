@@ -498,3 +498,23 @@ footer a:hover {
 	background: #1e9cb5;
 	color: #1e9cb5;
 }
+
+.mongodb {
+	background: #49a649;
+	color: #49a649;
+}
+
+.express {
+	background: #ff9326;
+	color: #ff9326;
+}
+
+.angularjs {
+	background: #e23143;
+	color: #e23143;
+}
+
+.nodejs {
+	background: #90c53f;
+	color: #90c53f;
+}
